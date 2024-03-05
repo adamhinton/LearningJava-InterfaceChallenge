@@ -6,7 +6,7 @@ enum COLOR { BLACK, BLUE, GREEN, ORANGE, RED }
 
 enum PointMarker { CIRCLE, PUSH_PIN, STAR, SQUARE, TRIANGLE }
 
-enum LineMarker{ DASXHED, DOTTED, SOLID }
+enum LineMarker{ DASHED, DOTTED, SOLID }
 
 
 public interface Mappable{
