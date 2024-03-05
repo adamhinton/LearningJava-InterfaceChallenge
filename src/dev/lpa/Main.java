@@ -24,6 +24,7 @@ public class Main {
 // Default method toJSON() which prints type, label and marker
 //Static method that takes in Mappable as arg. Prints properties of each Mappable type
 
+
 // Two classses:
 
 // Building class

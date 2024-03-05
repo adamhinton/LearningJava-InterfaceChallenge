@@ -2,23 +2,20 @@ package dev.lpa;
 
 public interface Mappable{
 
-    public String label;
-    public GeometryType type;
-    public String marker;
-    public String name;
 
+    String getLabel();
+    GeometryType getType();
+    String getMarker();
 
+    public final String JSON_PROPERTY = """
+            "properties":{%s}
+            """;
 
-    default String getLabel(){
-        return label;
-    };
-
-    default GeometryType getType(){
-        return type;
-    }
-
-    default String getMarker(){
-        return marker;
+    default void toJson(){
+        System.out.printf("""
+                    "properties"
+                """);
     }
 
 }
+// "properties": {"type": "POINT", "label": "Sydney Town Hall (GOVERNMENT)", "marker": "RED STAR", "name": Sydney Town Hall, "usage": "GOVERNMENT" }
