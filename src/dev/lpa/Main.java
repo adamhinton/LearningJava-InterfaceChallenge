@@ -3,6 +3,9 @@ package dev.lpa;
 public class Main {
     public static void main(String[] args) {
 
+        Building building = new Building("Herp derp 123", "Red star");
+        building.toJson();
+
     }
 }
 
@@ -22,7 +25,8 @@ public class Main {
 // Const str called JSON_PROPERTY. Equals "properties":{%s}
     // Using a text block will help maintain quot marks in output
 // Default method toJSON() which prints type, label and marker
-//Static method that takes in Mappable as arg. Prints properties of each Mappable type
+//Static method that takes in Mappable as arg. Prints properties of each Mappable type, includeing type,label, and
+// marker, but also any other fields on the classes.
 
 
 // Two classses:

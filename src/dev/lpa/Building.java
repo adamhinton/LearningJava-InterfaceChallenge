@@ -3,13 +3,12 @@ package dev.lpa;
 public class Building implements Mappable {
 
 
-    public String label;
-    public GeometryType type = GeometryType.POINT;
-    public String marker;
+    private String label;
+    private final GeometryType type = GeometryType.POINT;
+    private String marker;
 
-    public Building(String label, GeometryType type, String marker) {
+    public Building(String label, String marker) {
         this.label = label;
-        this.type = type;
         this.marker = marker;
     }
 
