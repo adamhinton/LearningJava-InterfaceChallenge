@@ -1,5 +1,14 @@
 package dev.lpa;
 
+enum GeometryType{ LINE, POINT, POLYGON }
+
+enum COLOR { BLACK, BLUE, GREEN, ORANGE, RED }
+
+enum PointMarker { CIRCLE, PUSH_PIN, STAR, SQUARE, TRIANGLE }
+
+enum LineMarker{ DASXHED, DOTTED, SOLID }
+
+
 public interface Mappable{
 
     String JSON_PROPERTY = """
