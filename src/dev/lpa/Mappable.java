@@ -11,11 +11,11 @@ public interface Mappable{
             "properties":{%s}
             """;
 
-    default void toJson(){
-        System.out.printf("""
-                    "properties"
-                """);
+    default void toJson() {
+        System.out.println(String.format(JSON_PROPERTY,
+                "\"type\": \"" + getType().toString() + "\", " +
+                        "\"label\": \"" + getLabel() + "\", " +
+                        "\"marker\": \"" + getMarker() + "\""));
     }
-
 }
 // "properties": {"type": "POINT", "label": "Sydney Town Hall (GOVERNMENT)", "marker": "RED STAR", "name": Sydney Town Hall, "usage": "GOVERNMENT" }
